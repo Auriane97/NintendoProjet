@@ -8,6 +8,15 @@ public abstract class Console {
 	
 	protected int prix;
 	protected String date;
+	
+	
+	
+	public Console(String nom,  String date,int prix) {
+		this.nom = nom;
+		this.prix = prix;
+		this.date = date;
+	}
+	
 
 	public int getPrix() {
 		return prix;
@@ -26,9 +35,7 @@ public abstract class Console {
 	}
 
 
-	public Console(String nom) {
-		this.nom = nom;
-	}
+
 
 	public String getNom() {
 		return nom;

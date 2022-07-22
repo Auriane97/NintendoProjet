@@ -8,16 +8,17 @@ import metier.Adresse;
 import metier.Boutique;
 import metier.Client;
 import metier.Console;
+import metier.Hybride;
 import metier.Jeu;
 
 public class Test {
 
 	public static void main(String[] args) {
-		Console c1= new Console ("switch");
-		Console c2= new Console ("xbox");
-		Console c3= new Console ("playstation");
-		Console c4= new Console ("gamecube");
-		Console c5= new Console ("supernintendo");
+		Console c1= new Hybride ("switch","date",40);
+		Console c2= new Hybride ("xbox","date",40);
+		Console c3= new Hybride ("playstation","date",40);
+		Console c4= new Hybride ("gamecube","date",40);
+		Console c5= new Hybride ("supernintendo","date",40);
 		
 		Jeu j1= new Jeu ("zelda",c1);
 		Jeu j2= new Jeu ("mario",c2);
