@@ -1,5 +1,8 @@
 package test;
 
+import metier.Adresse;
+import metier.Boutique;
+import metier.Client;
 import metier.Console;
 import metier.Jeu;
 
@@ -19,7 +22,12 @@ public class Test {
 		Jeu j5= new Jeu ("pokemon",c5);
 		
 		
+		Adresse a1 = new Adresse ("12","rue dubonneau","Paris");
+		
+		Boutique b1 = new Boutique("la maison du jeu",a1);
 
+		Client client1 = new Client ("Doe","Joe");
+		Client client2 = new Client ("DANE","Jane");
 	}
 
 }
