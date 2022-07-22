@@ -1,5 +1,8 @@
 package test;
 
+import java.time.LocalDate;
+
+import metier.Achat;
 import metier.Console;
 import metier.Jeu;
 
@@ -17,6 +20,10 @@ public class Test {
 		Jeu j3= new Jeu ("siperman",c3);
 		Jeu j4= new Jeu ("wii sport",c4);
 		Jeu j5= new Jeu ("pokemon",c5);
+		
+		Achat achat1= new Achat(j1,LocalDate.now(),40.0);
+		
+		
 		
 		
 
