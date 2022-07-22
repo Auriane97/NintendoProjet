@@ -11,11 +11,11 @@ public class Client {
 	
 
 
-	public Client(String nom, String prenom, List<Achat> achats) {
-		super();
+	public Client(String nom, String prenom) {
+		
 		this.nom = nom;
 		this.prenom = prenom;
-		this.achats = achats;
+		
 	}
 
 
