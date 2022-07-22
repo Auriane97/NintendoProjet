@@ -2,7 +2,29 @@ package metier;
 
 public abstract class Console {
 
+
 	protected String nom;
+
+	
+	protected int prix;
+	protected String date;
+
+	public int getPrix() {
+		return prix;
+	}
+
+	public String getDate() {
+		return date;
+	}
+
+	public void setPrix(int prix) {
+		this.prix = prix;
+	}
+
+	public void setDate(String date) {
+		this.date = date;
+	}
+
 
 	public Console(String nom) {
 		this.nom = nom;
@@ -18,7 +40,7 @@ public abstract class Console {
 
 	@Override
 	public String toString() {
-		return "Console [nom=" + nom + "]";
+		return "Console [nom=" + nom + ", prix=" + prix + ", date=" + date + "]";
 	}
 	
 	

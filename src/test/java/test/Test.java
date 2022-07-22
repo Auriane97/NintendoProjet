@@ -1,5 +1,9 @@
 package test;
 
+
+import java.time.LocalDate;
+
+import metier.Achat;
 import metier.Adresse;
 import metier.Boutique;
 import metier.Client;
@@ -21,6 +25,10 @@ public class Test {
 		Jeu j4= new Jeu ("wii sport",c4);
 		Jeu j5= new Jeu ("pokemon",c5);
 		
+		Achat achat1= new Achat(j1,LocalDate.now(),40.0);
+		
+		
+		
 		
 		Adresse a1 = new Adresse ("12","rue dubonneau","Paris");
 		
@@ -28,6 +36,9 @@ public class Test {
 
 		Client client1 = new Client ("Doe","Joe");
 		Client client2 = new Client ("DANE","Jane");
+	
+		client1.getAchats().add(achat1);
 	}
+	
 
 }
